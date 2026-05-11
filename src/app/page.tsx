@@ -60,7 +60,7 @@ export default function Home() {
                   </svg>
                 </Link>
                 <Link
-                  href="/solar-calculator"
+                  href="/subsidy"
                   className="inline-flex items-center gap-2.5 rounded-full border-2 border-white/90 bg-white/10 px-9 py-4 text-sm font-medium uppercase text-white backdrop-blur-sm transition-colors hover:bg-white/20"
                 >
                   Check subsidy
