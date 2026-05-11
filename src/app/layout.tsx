@@ -17,6 +17,9 @@ export const metadata: Metadata = {
   title: "ASMTECH Power & Infra Pvt Ltd | Go Solar, Pay Zero Electricity Bills",
   description:
     "ASMTECH Power & Infra provides premium solar solutions. Get subsidy up to ₹1,30,800 from Central & State Government. Go solar and pay zero electricity bills.",
+  appleWebApp: {
+    title: "ASMTech",
+  },
 };
 
 export default function RootLayout({
