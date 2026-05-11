@@ -30,21 +30,21 @@ export default function Home() {
           {/* Hero content */}
           <div className="flex flex-1 items-center justify-center px-4 pb-12 sm:pb-16">
             <div className="grid gap-4 sm:gap-6 text-white text-center max-w-full">
-              <h3 className="uppercase text-green-300 text-lg sm:text-xl font-medium">
-                Powering the future
+              <h3 className="justify-self-center uppercase text-green-300 text-base sm:text-lg font-medium inline-block w-fit mx-auto px-3 py-1.5 sm:px-4 sm:py-2 rounded-full bg-black/45 backdrop-blur-sm border border-green-400/35 shadow-md shadow-black/20">
+                Solar Energy for Tomorrow
               </h3>
               <h1 className="text-4xl leading-[1.05] md:text-6xl lg:text-7xl xl:text-[80px] xl:leading-[100%] font-bold max-w-[15ch] mx-auto">
-                Powering The <span className="text-green-400">Future</span> Of Sustainable Energy
+                Power Your <span className="text-green-400">Future</span> with Clean Solar Energy
               </h1>
-              <h2 className="uppercase font-medium text-base px-2">
-                Get subsidy upto Rs.1,30,000 from central & state govt 🇮🇳
+              <h2 className="uppercase font-medium text-xl max-w-[60ch] px-8 text-gray-200">
+                Expert end-to-end solar solutions for commercial, industrial, and ground mount projects
               </h2>
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6 sm:mt-8">
                 <Link
                   href="/contact"
                   className="inline-flex items-center gap-2.5 bg-green-400 px-9 py-4 rounded-full text-black font-medium uppercase"
                 >
-                  Get quote
+                  Get free consultation
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
