@@ -80,7 +80,7 @@ const Header = () => {
         aria-label="Mobile"
         aria-hidden={!menuOpen}
         className={`md:hidden overflow-hidden transition-[max-height,opacity] duration-200 ease-out ${
-          menuOpen ? "max-h-80 opacity-100 mt-2" : "max-h-0 opacity-0 pointer-events-none"
+          menuOpen ? "max-h-96 opacity-100 mt-2" : "max-h-0 opacity-0 pointer-events-none"
         }`}
       >
         <nav className="rounded-2xl border-2 border-black bg-white px-3 py-3 shadow-lg">

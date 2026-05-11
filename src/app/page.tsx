@@ -58,11 +58,12 @@ export default function Home() {
                     <path d="M5 12h14M13 6l6 6-6 6" />
                   </svg>
                 </Link>
-                <div>
-                  <Link href="/contact" className="uppercase">
-                    Check subsidy
-                  </Link>
-                </div>
+                <Link
+                  href="/solar-calculator"
+                  className="inline-flex items-center gap-2.5 rounded-full border-2 border-white/90 bg-white/10 px-9 py-4 text-sm font-medium uppercase text-white backdrop-blur-sm transition-colors hover:bg-white/20"
+                >
+                  Check subsidy
+                </Link>
               </div>
             </div>
           </div>
