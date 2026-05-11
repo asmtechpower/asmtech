@@ -16,6 +16,7 @@ export default function Home() {
           loop
           muted
           playsInline
+          poster="https://res.cloudinary.com/dhbjr5ujm/image/upload/v1778514971/8851164-uhd_2560_1440_30fps_00_00_08_k5fcqy.png"
           className="absolute inset-0 w-full h-full object-cover"
         >
           <source

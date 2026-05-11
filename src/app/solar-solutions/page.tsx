@@ -65,7 +65,7 @@ const solutions = [
     description:
       "Off-grid solar water pumping solutions for reliable water supply for agriculture, irrigation, and domestic use. Reduces dependency on diesel and electricity while providing consistent performance in remote areas.",
     hasLearnMore: false,
-    imageUrl: "https://res.cloudinary.com/dhbjr5ujm/image/upload/v1778405534/solar_solution_7_cdsinu.png"
+    imageUrl: "https://res.cloudinary.com/dhbjr5ujm/image/upload/v1778516897/solar_water_pump_d5bpee.jpg"
   },
   {
     id: "08",
