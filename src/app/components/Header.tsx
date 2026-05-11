@@ -24,7 +24,7 @@ const Header = () => {
             width={160}
             height={160}
             alt=""
-            className="h-9 w-auto scale-[1.8] md:scale-[2] origin-left"
+            className="h-10 w-auto scale-[1.95] md:scale-[2.15] origin-left"
           />
         </Link>
 
@@ -108,7 +108,7 @@ const Header = () => {
                 href="/solar-calculator"
                 className="w-full justify-center"
               >
-                Subsidy calculator
+                Savings calculator
               </NavLink>
             </li>
             <li className="pt-2 border-t border-neutral-200">

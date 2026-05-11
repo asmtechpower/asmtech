@@ -11,7 +11,7 @@ const solutionLinks = [
   { label: "Residential", href: "/solar-solutions" },
   { label: "Commercial", href: "/solar-solutions" },
   { label: "Ground mount", href: "/solar-solutions" },
-  { label: "Subsidy & savings", href: "/solar-calculator" },
+  { label: "Savings calculator", href: "/solar-calculator" },
 ];
 
 const socialLinks = [
@@ -31,7 +31,12 @@ const socialLinks = [
   },
 ] as const;
 
+const brandDescription =
+  "ASMTECH Power & Infra Pvt Ltd is a solar EPC partner for homes and businesses: design, installation, and support across residential, commercial, and ground-mount projects, with guidance on subsidies and long-term savings.";
+
 export default function Footer() {
+  const year = new Date().getFullYear();
+
   return (
     <footer className="bg-neutral-800">
       <div className="mx-auto max-w-7xl px-6 py-10 sm:px-10 sm:py-12 md:px-14 md:py-14">
@@ -49,44 +54,49 @@ export default function Footer() {
         </div>
 
         {/* Bottom row */}
-        <div className="flex flex-col sm:flex-row gap-10 sm:gap-16 md:gap-24">
-          {/* Logo */}
-          <div className="shrink-0 flex flex-col gap-5">
-            <Link href="/" aria-label="ASMTECH home">
-              <Image
-                src="/asmtech_logo.webp"
-                height={54}
-                width={81}
-                alt=""
-                className="brightness-200"
-              />
-            </Link>
-            <div className="flex items-center gap-3">
-              {socialLinks.map((item) => (
-                <a
-                  key={item.label}
-                  href={item.href}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`ASMTECH on ${item.label}`}
-                  className="flex size-10 items-center justify-center rounded-full border border-neutral-500 text-neutral-300 transition-colors hover:border-neutral-300 hover:bg-neutral-700 hover:text-white"
-                >
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="size-5"
-                    aria-hidden
+        <div className="flex flex-col lg:flex-row lg:justify-between gap-10 lg:gap-16">
+          {/* Logo, socials, and description */}
+          <div className="flex flex-col sm:flex-row sm:items-start gap-6 sm:gap-8 lg:gap-10 lg:max-w-2xl">
+            <div className="flex shrink-0 flex-col gap-5">
+              <Link href="/" aria-label="ASMTECH home">
+                <Image
+                  src="/asmtech_logo.webp"
+                  height={54}
+                  width={81}
+                  alt=""
+                  className="brightness-200"
+                />
+              </Link>
+              <div className="flex items-center gap-3">
+                {socialLinks.map((item) => (
+                  <a
+                    key={item.label}
+                    href={item.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={`ASMTECH on ${item.label}`}
+                    className="flex size-10 items-center justify-center rounded-full border border-neutral-500 text-neutral-300 transition-colors hover:border-neutral-300 hover:bg-neutral-700 hover:text-white"
                   >
-                    {item.icon}
-                  </svg>
-                </a>
-              ))}
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      viewBox="0 0 24 24"
+                      fill="currentColor"
+                      className="size-5"
+                      aria-hidden
+                    >
+                      {item.icon}
+                    </svg>
+                  </a>
+                ))}
+              </div>
             </div>
+            <p className="text-sm leading-relaxed text-neutral-400 sm:pt-1 sm:min-w-0">
+              {brandDescription}
+            </p>
           </div>
 
           {/* Link columns */}
-          <div className="flex gap-16 sm:gap-20 md:gap-28">
+          <div className="flex flex-wrap gap-x-16 gap-y-8 sm:gap-x-20 md:gap-x-28">
             {/* Nav links */}
             <nav aria-label="Footer navigation">
               <ul className="flex flex-col gap-3">
@@ -120,6 +130,10 @@ export default function Footer() {
             </nav>
           </div>
         </div>
+
+        <p className="mt-10 border-t border-neutral-700 pt-8 text-center text-xs text-neutral-500 sm:text-left">
+          © {year} ASMTECH Power & Infra Pvt Ltd. All rights reserved.
+        </p>
       </div>
     </footer>
   );

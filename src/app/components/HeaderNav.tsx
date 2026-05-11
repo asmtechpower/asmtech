@@ -14,7 +14,7 @@ export default function HeaderNav() {
           <NavLink href="/solar-solutions">Solar Solutions</NavLink>
         </li>
         <li>
-          <NavLink href="/solar-calculator">Subsidy calculator</NavLink>
+          <NavLink href="/solar-calculator">Savings calculator</NavLink>
         </li>
       </ul>
     </nav>
