@@ -31,8 +31,8 @@ export default function ContactPage() {
             </h1>
 
             {/* Contact details */}
-            <div className="mt-4 flex flex-col gap-4 text-neutral-700">
-              <div className="flex items-center gap-3">
+            <div className="mt-4 flex flex-col gap-5 text-neutral-700">
+              <div className="flex items-start gap-3">
                 <svg
                   xmlns="http://www.w3.org/2000/svg"
                   viewBox="0 0 24 24"
@@ -41,12 +41,25 @@ export default function ContactPage() {
                   strokeWidth={1.5}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="size-5 shrink-0 text-neutral-500"
+                  className="size-6 shrink-0 text-neutral-500 mt-0.5"
                   aria-hidden
                 >
                   <path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z" />
                 </svg>
-                <span className="text-sm">+91 98765 43210</span>
+                <div className="flex flex-col gap-2 text-lg sm:text-xl font-medium text-neutral-900">
+                  <a
+                    href="tel:+919864103646"
+                    className="transition-colors hover:text-neutral-600"
+                  >
+                    +91 9864103646
+                  </a>
+                  <a
+                    href="tel:+917982821735"
+                    className="transition-colors hover:text-neutral-600"
+                  >
+                    +91 7982821735
+                  </a>
+                </div>
               </div>
               <div className="flex items-center gap-3">
                 <svg
@@ -57,13 +70,18 @@ export default function ContactPage() {
                   strokeWidth={1.5}
                   strokeLinecap="round"
                   strokeLinejoin="round"
-                  className="size-5 shrink-0 text-neutral-500"
+                  className="size-6 shrink-0 text-neutral-500"
                   aria-hidden
                 >
                   <rect x="2" y="4" width="20" height="16" rx="2" />
                   <path d="M22 4l-10 8L2 4" />
                 </svg>
-                <span className="text-sm">info@asmtech.in</span>
+                <a
+                  href="mailto:connect.asmtech@gmail.com"
+                  className="text-lg sm:text-xl font-medium text-neutral-900 transition-colors hover:text-neutral-600 break-all"
+                >
+                  connect.asmtech@gmail.com
+                </a>
               </div>
               <div className="flex items-start gap-3">
                 <svg

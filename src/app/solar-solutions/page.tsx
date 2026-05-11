@@ -3,7 +3,6 @@ import Link from "next/link";
 import Footer from "../components/Footer";
 import Header from "../components/Header";
 import Image from "next/image";
-import { getCldImageUrl } from "next-cloudinary";
 
 export const metadata: Metadata = {
   title: "Solar Solutions | ASMTECH Power & Infra Pvt Ltd",
@@ -88,13 +87,24 @@ export default function SolarSolutionsPage() {
 
       {/* Hero section */}
       <section className="container mx-auto max-w-6xl px-4 pt-12 pb-16 md:pt-16 md:pb-20">
-        <div className="flex flex-col items-center text-center gap-6">
-          <span className="inline-flex items-center rounded-full border border-neutral-400 px-5 py-2 text-xs font-semibold uppercase tracking-widest text-neutral-800">
-            Solar Solutions
+        <div className="mx-auto flex max-w-3xl flex-col items-center gap-6 text-center md:gap-8">
+          <span className="inline-flex items-center gap-2 rounded-full border border-emerald-900/10 bg-white/75 px-5 py-2 text-[11px] font-semibold uppercase tracking-[0.22em] text-emerald-950/85 shadow-[0_1px_0_rgba(0,0,0,0.04)] backdrop-blur-sm">
+            <span
+              className="size-1.5 shrink-0 rounded-full bg-emerald-500 shadow-[0_0_0_3px_rgba(16,185,129,0.25)]"
+              aria-hidden
+            />
+            Solar solutions
           </span>
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight text-neutral-900 max-w-[20ch]">
-            Sustainable solar solutions for all
+          <h1 className="max-w-[18ch] text-[2rem] font-semibold leading-[1.08] tracking-tight text-neutral-900 sm:text-4xl sm:max-w-[20ch] md:text-5xl md:max-w-none lg:text-[3.35rem] lg:leading-[1.06]">
+            Sustainable{" "}
+            <span className="bg-linear-to-r from-emerald-800 via-emerald-600 to-lime-500 bg-clip-text text-transparent">
+              solar
+            </span>{" "}
+            solutions for all
           </h1>
+          <p className="max-w-xl text-pretty text-base font-light leading-relaxed tracking-wide text-neutral-600 sm:text-lg">
+            From rooftops to ground-mount plants — clean power tailored to how you live and work.
+          </p>
         </div>
 
         {/* Hero image placeholder */}
