@@ -4,7 +4,7 @@ import Image from "next/image";
 export default function ProcessSection() {
   return (
     <section className="bg-[#f5f0e8] px-4 py-16 md:px-10 md:py-24">
-      <div className="mx-auto max-w-6xl">
+      <div className="mx-auto max-w-7xl">
         <div className="flex flex-col md:flex-row gap-8 md:gap-12 rounded-4xl bg-[#374f6b] p-6 md:p-12">
           {/* Left Column */}
           <div className="flex-1 text-white md:pr-8">
@@ -20,31 +20,53 @@ export default function ProcessSection() {
               <div className="flex gap-6">
                 <span className="text-[2.35rem] leading-none font-medium text-white">01.</span>
                 <div className="mt-1">
-                  <h3 className="mb-2 text-2xl font-medium">Consultation & Audit</h3>
+                  <h3 className="mb-2 text-2xl font-medium">Consultation & Energy Audit</h3>
                   <p className="text-[#a3b8cc] text-[1.2rem] leading-relaxed max-w-xs">
-                    Detailed site assessment and shadow analysis.
+                    Detailed site assessment and energy analysis.
                   </p>
                 </div>
               </div>
-              
+
               {/* Step 02 */}
               <div className="flex gap-6">
                 <span className="text-[2.35rem] leading-none font-medium text-white">02.</span>
                 <div className="mt-1">
                   <h3 className="mb-2 text-2xl font-medium">Design & Engineering</h3>
                   <p className="text-[#a3b8cc] text-[1.2rem] leading-relaxed max-w-xs">
-                    Custom PV layouts and structural analysis
+                    Custom PV layouts and structural optimization.
                   </p>
                 </div>
               </div>
-              
+
               {/* Step 03 */}
               <div className="flex gap-6">
                 <span className="text-[2.35rem] leading-none font-medium text-white">03.</span>
                 <div className="mt-1">
-                  <h3 className="mb-2 text-2xl font-medium leading-tight">Installation &<br />Commissioning</h3>
-                  <p className="text-[#a3b8cc] text-[1.2rem] leading-relaxed max-w-xs mt-2">
-                    Expert execution and grid synchronization
+                  <h3 className="mb-2 text-2xl font-medium">Installation & Testing</h3>
+                  <p className="text-[#a3b8cc] text-[1.2rem] leading-relaxed max-w-xs">
+                    Professional installation and grid synchronization.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 04 */}
+              <div className="flex gap-6">
+                <span className="text-[2.35rem] leading-none font-medium text-white">04.</span>
+                <div className="mt-1">
+                  <h3 className="mb-2 text-2xl font-medium">Commissioning & Handover</h3>
+                  <p className="text-[#a3b8cc] text-[1.2rem] leading-relaxed max-w-xs">
+                    System activation, inspection, and performance verification.
+                  </p>
+                </div>
+              </div>
+
+              {/* Step 05 */}
+              <div className="flex gap-6">
+                <span className="text-[2.35rem] leading-none font-medium text-white">05.</span>
+                <div className="mt-1">
+                  <h3 className="mb-2 text-2xl font-medium">Reliable After-Sales Service</h3>
+                  <p className="text-[#a3b8cc] text-[1.2rem] leading-relaxed max-w-xs">
+                    Ongoing maintenance, monitoring, and technical support.
                   </p>
                 </div>
               </div>
