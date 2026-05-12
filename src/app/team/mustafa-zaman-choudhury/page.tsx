@@ -8,6 +8,18 @@ export const metadata: Metadata = {
   title: "Mustafa Zaman Choudhury – Founder & CEO | ASMTECH",
   description:
     "Engineer and entrepreneur driven by a vision to accelerate the transition toward a sustainable future.",
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-snippet': -1,
+        'max-image-preview': 'large',
+        'max-video-preview': -1
+      },
+    }
 };
 
 export default function TeamMemberPage() {

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
-import { Inter } from "next/font/google";
+import { Geist, Inter } from "next/font/google";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -14,9 +13,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "ASMTECH Power & Infra Pvt Ltd | Go Solar, Pay Zero Electricity Bills",
+  title: "Power your future with clean energy",
   description:
-    "ASMTECH Power & Infra provides premium solar solutions. Get subsidy up to ₹1,30,800 from Central & State Government. Go solar and pay zero electricity bills.",
+    "Expert end-to-end solar solutions for residential, commercial and industrial projects",
+    keywords: ['asmtech, asmtechpower, solar, solar panel, solar solutions, solar company, solar installer, solar panels, solar energy, solar power, solar energy company, solar energy solutions, solar energy installer, solar energy solutions, solar energy company, solar energy installer'],
   appleWebApp: {
     title: "ASMTech",
   },

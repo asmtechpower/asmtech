@@ -7,6 +7,26 @@ export const metadata: Metadata = {
   title: "Solar Rooftop Subsidy | ASMTECH Power & Infra Pvt Ltd",
   description:
     "Central and state government rooftop solar subsidy slabs by plant capacity. Illustrative figures — confirm eligibility and amounts on the National Portal and with your DISCOM.",
+  keywords: [
+    "rooftop solar subsidy",
+    "central government subsidy",
+    "state government subsidy",
+    "solar subsidy calculator",
+    "solar subsidy scheme",
+    "solar subsidy 2024",
+  ],
+  robots: {
+    index: true,
+    follow: true,
+    nocache: false,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 const inr = new Intl.NumberFormat("en-IN", {
@@ -99,7 +119,9 @@ export default function SubsidyPage() {
                   className="flex justify-between gap-2 tabular-nums"
                 >
                   <span className="text-neutral-600">{row.capacityKw} kW</span>
-                  <span className="font-semibold">{inr.format(row.totalInr)}</span>
+                  <span className="font-semibold">
+                    {inr.format(row.totalInr)}
+                  </span>
                 </li>
               ))}
             </ul>

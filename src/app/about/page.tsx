@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   title: "About Us | ASMTECH Power & Infra Pvt Ltd",
   description:
     "ASMTECH Power & Infra Pvt Ltd is a growing Solar EPC company committed to delivering reliable and affordable rooftop solar solutions for homes and businesses across India.",
+    keywords: ['about us', 'asmtech', 'asmtechpower', 'solar', 'solar panel', 'solar solutions', 'solar company', 'solar installer', 'solar panels', 'solar energy', 'solar power', 'solar energy company', 'solar energy solutions', 'solar energy installer', 'solar energy solutions', 'solar energy company', 'solar energy installer'],
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-snippet': -1,
+        'max-image-preview': 'large',
+        'max-video-preview': -1
+      },
+    },
 };
 
 export default function AboutPage() {

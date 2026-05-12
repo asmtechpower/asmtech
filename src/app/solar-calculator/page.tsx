@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   title: "Solar Savings Calculator | ASMTECH Power & Infra Pvt Ltd",
   description:
     "Estimate Central Financial Assistance (CFA) and annual savings for residential rooftop solar using MNRE PM Surya Ghar slab norms. Illustrative figures — verify on the National Portal.",
+    keywords: ['solar calculator', 'solar savings calculator', 'solar subsidy calculator', 'solar subsidy scheme', 'solar subsidy 2024'],
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-snippet': -1,
+        'max-image-preview': 'large',
+        'max-video-preview': -1
+      },
+    },
 };
 
 export default function SolarCalculatorPage() {

@@ -8,6 +8,19 @@ export const metadata: Metadata = {
   title: "Solar Solutions | ASMTECH Power & Infra Pvt Ltd",
   description:
     "Explore ASMTECH's range of sustainable solar solutions — residential systems, commercial installations, ground mount plants, porta cabins, solar street lights, water heaters, water pumps, and EV charging stations.",
+    keywords: ['solar solution'],
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-snippet': -1,
+        'max-image-preview': 'large',
+        'max-video-preview': -1
+      },
+    },
 };
 
 const solutions = [

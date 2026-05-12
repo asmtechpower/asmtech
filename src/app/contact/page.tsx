@@ -7,6 +7,19 @@ export const metadata: Metadata = {
   title: "Contact Us | ASMTECH Power & Infra Pvt Ltd",
   description:
     "Get in touch with ASMTECH Power & Infra. Request a quote, ask about solar subsidies, or send us a message. We're here to help you go solar.",
+    keywords: ['contact us', 'asmtech', 'asmtechpower', 'solar', 'solar panel', 'solar solutions', 'solar company', 'solar installer', 'solar panels', 'solar energy', 'solar power', 'solar energy company', 'solar energy solutions', 'solar energy installer', 'solar energy solutions', 'solar energy company', 'solar energy installer'],
+    robots: {
+      index: true,
+      follow: true,
+      nocache: false,
+      googleBot: {
+        index: true,
+        follow: true,
+        'max-snippet': -1,
+        'max-image-preview': 'large',
+        'max-video-preview': -1
+      },
+    },
 };
 
 export default function ContactPage() {
