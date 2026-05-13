@@ -124,7 +124,6 @@ export default function AboutPage() {
             priority={false}
           />
           </div>
-    
         </div>
       </section>
 

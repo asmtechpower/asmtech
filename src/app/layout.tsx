@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Inter } from "next/font/google";
 import "./globals.css";
+import { Analytics } from "@vercel/analytics/next";
 
 const geistSans = Geist({
   variable: "--font-geist",
@@ -20,6 +21,21 @@ export const metadata: Metadata = {
   appleWebApp: {
     title: "ASMTech",
   },
+  openGraph: {
+    title: "Power your future with clean energy",
+    description:
+      "Expert end-to-end solar solutions for residential, commercial and industrial projects",
+    url: "https://asmtechpower.co.in",
+    siteName: "ASMTech",
+    type: "website",
+    images: [
+      {
+        url: "https://asmtechpower.co.in/",
+        width: 800,
+        height: 600,
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
@@ -33,6 +49,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${inter.variable} antialiased`}
     >
       <body>{children}</body>
+      <Analytics />
     </html>
   );
 }
